@@ -13,12 +13,21 @@
     .effective { color: #526a6b; }
     code { background: #f2f7f5; padding: .1em .3em; border-radius: .25em; }
     a { color: #006770; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    nav a { padding: 8px 16px; border: 1px solid currentColor; border-radius: 8px; }
+    section { scroll-margin-top: 16px; }
   </style>
 </head>
 <body>
 <main>
+  <nav aria-label="언어 / Language">
+    <a href="#korean" lang="ko">한국어</a>
+    <a href="#english" lang="en">English</a>
+  </nav>
+  <section lang="ko" id="korean">
   <h1>뒤집기억(FlipMemory) 개인정보처리방침</h1>
   <p class="effective">시행일: 2026년 9월 13일</p>
+  <p class="effective">문서 정리: 2026년 9월 14일 — 언어 이동과 영어 설명을 보완했습니다. 앱의 데이터 처리 방식은 변경하지 않았습니다.</p>
   <p>뒤집기억(FlipMemory, 이하 “앱”) 개발자 Alan Works는 사용자의 개인정보를 중요하게 생각합니다. 이 방침은 앱이 어떤 데이터에 접근하고 이를 어떻게 저장·이용·공유·삭제하는지 설명합니다.</p>
 
   <h2>1. 계정, 광고와 결제</h2>
@@ -84,21 +93,26 @@
   <p>개인정보 관련 문의: Alan Works, i67207020@gmail.com (Google Play에 공개된 개발자 연락처).</p>
 
   <hr>
+  </section>
   <section lang="en" id="english">
+  <p><a href="#korean" lang="ko">한국어로 읽기</a></p>
   <h1>FlipMemory Privacy Policy</h1>
   <p class="effective">Effective: 13 September 2026</p>
+  <p class="effective">Editorial update: 14 September 2026 — language navigation and English explanations clarified; app data handling is unchanged.</p>
   <p>This English version describes the same current app behaviour as the Korean policy above.</p>
 
   <h2>1. Accounts, ads, and purchases</h2>
   <ul>
     <li>FlipMemory has no sign-up or login feature and does not operate developer-run user accounts or servers.</li>
     <li>Production builds include Google Mobile Ads SDK, User Messaging Platform (UMP) privacy choices, and Google Play Billing for the permanent, non-consumable <code>remove_ads</code> purchase and restoration.</li>
-    <li>Banner and interstitial ad requests, UMP, and Google Play process data under their own notices, your consent, and Google account or device settings. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy">Mobile Ads SDK data disclosure</a>.</li>
+    <li>Banner and interstitial ad requests depend on the current UMP ad-request eligibility and Remove Ads ownership state. Where available, Settings → Privacy choices reopens the UMP choices screen.</li>
+    <li>Google Play handles purchases and restoration; the app uses purchase state to control ads and the purchase interface.</li>
+    <li>Google SDKs and Google Play process data under their own notices, your consent, and account, region, or device settings. The developer does not independently establish the data processed in each request or its retention period. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Mobile Ads SDK data disclosure</a>.</li>
   </ul>
 
   <p>Google Mobile Ads SDK collects and shares IP addresses (which may estimate approximate location), app interactions, diagnostics, and device identifiers such as advertising ID and app set ID with Google and advertising service providers for advertising, analytics, and fraud prevention. SDK data is encrypted in transit with TLS. Processing can vary by consent, region, and device settings; retention and deletion of data processed by Google follow Google policies and account settings.</p>
   <h2>2. Data stored on your device</h2>
-  <p>For app features, FlipMemory stores your nickname, deck names and contents, game records and snapshots, settings, personal-photo deck tutorial state, and copies of photos you select with Android Photo Picker plus their edited images. These are stored in local Room, DataStore, and app-internal files.</p>
+  <p>For app features, FlipMemory stores your nickname, deck names and contents, game dates, outcomes, duration, attempts, mismatches, deck and nickname snapshots, music/sound/vibration/Preview settings, personal-photo deck tutorial state, and copies of photos you select with Android Photo Picker plus their edited images. Selected photos are copied to app-specific storage for editing and gameplay. Data is stored in local Room, DataStore, and app-internal files.</p>
   <p>Settings include optional daily reminder enablement, time, and reminder suggestion state.</p>
 
   <h2>3. Photos, reminders, and permissions</h2>
@@ -106,7 +120,7 @@
   <p>When enabled, the local reminder is scheduled for your selected time and shown only if you have not completed a game that day. You can disable it in Settings. It does not use a developer push server or FCM.</p>
 
   <h2>4. Backup, export, and sharing</h2>
-  <p>If Android system backup is enabled, the operating system may back up and restore app data through your device backup provider; the developer cannot access that backup. Only after you press a relevant button can the app save or share result text/images or a deck ZIP through Android sharing. A ZIP may include deck names and card images; results may include your nickname, outcome, deck information, and Preview time. Copies you save or send are governed by their destination or receiving app.</p>
+  <p>If Android system backup is enabled, the operating system may back up and restore app data through your device backup provider; the developer cannot access that backup. Only after you press a relevant button can the app save or share result text/images or a deck ZIP through Android sharing. A ZIP may include deck names and card images; results may include your nickname, outcome, deck information, card images, and Preview time. Android sharing lets you select the receiving app. The app does not automatically share this content in the background. Copies you save or send are governed by their destination or receiving app.</p>
 
   <h2>5. Retention, deletion, children, and changes</h2>
   <p>App-specific data remains in Android app-specific storage until you delete app data in device settings or uninstall the app. Delete gallery images, exported ZIP files, and shared copies from their own location or receiving app. FlipMemory is not designed primarily for children under 13 and does not offer accounts or developer-operated online personal-data collection. If data handling changes, both language versions and the effective date will be updated. Privacy contact: Alan Works, i67207020@gmail.com (the developer contact published on Google Play).</p>
