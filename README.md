@@ -6,6 +6,7 @@
 
 - `docs/<app-slug>/`: 앱별 공개 문서입니다. GitHub Pages의 `main` 브랜치 `/docs`에서 배포합니다.
 - `docs/flipmemory/`: 뒤집기억(FlipMemory) 개인정보처리방침입니다.
+- `docs/had-i-saved/`: 모았으면(Had I Saved) 개인정보처리방침입니다.
 
 ## 공개 범위와 관리
 

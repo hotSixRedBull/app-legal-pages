@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>모았으면 개인정보처리방침</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Noto Sans KR", sans-serif; }
+    body { margin: 0; background: #f7faf8; color: #173a3c; line-height: 1.7; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 2rem; line-height: 1.3; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    .effective { color: #526a6b; }
+    code { background: #eef5f1; padding: .1em .3em; border-radius: .25em; overflow-wrap: anywhere; }
+    a { color: #006770; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    nav a { padding: 8px 16px; border: 1px solid currentColor; border-radius: 8px; }
+    section { scroll-margin-top: 16px; }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="언어 / Language">
+    <a href="#korean" lang="ko">한국어</a>
+    <a href="#english" lang="en">English</a>
+  </nav>
+
+  <section lang="ko" id="korean">
+    <h1>모았으면 개인정보처리방침</h1>
+    <p class="effective">시행일: 2026년 9월 20일</p>
+    <p>Alan Works가 제공하는 모았으면(Had I Saved, 패키지 이름: <code>com.hotsixredbull.hadisaved</code>, 이하 “앱”)은 반복 지출을 기준으로 저축 목표를 계산하는 오프라인 앱입니다. 이 방침은 앱이 처리하는 데이터와 그 처리 방식을 설명합니다.</p>
+
+    <h2>1. 계정, 광고, 결제 및 온라인 서비스</h2>
+    <ul>
+      <li>앱에는 계정 생성, 회원가입 또는 로그인 기능이 없습니다.</li>
+      <li>광고, 결제, 구독, 분석 또는 추적 SDK를 사용하지 않습니다.</li>
+      <li>Firebase를 사용하지 않으며, Alan Works가 운영하는 사용자 서버나 백엔드가 없습니다.</li>
+      <li>앱은 <code>INTERNET</code> 권한을 선언하지 않으며, 앱의 데이터를 Alan Works 서버로 전송하지 않습니다.</li>
+    </ul>
+
+    <h2>2. 기기에 저장되는 데이터</h2>
+    <p>사용자가 반복 소비 기록을 명시적으로 저장할 때에만 앱은 해당 기록을 기기의 앱 전용 Room 데이터베이스에 저장합니다. 저장 항목은 기록 ID, 제목, 금액의 최소 통화 단위, 반복 주기, 생성 시각입니다.</p>
+    <p>계산 기능을 유지하기 위해 앱은 기기의 DataStore에 연환산율, 마지막 계산 모드, 마지막 선택 주기를 저장합니다. 이 값들은 사용자가 다음에 앱을 열었을 때 계산 상태를 복원하는 데 사용됩니다.</p>
+
+    <h2>3. 공유 및 전송</h2>
+    <p>앱은 이 로컬 데이터를 Alan Works 서버나 다른 개발자 운영 서비스로 전송하지 않습니다. 현재 앱에는 개발자 운영 서버, 클라우드 동기화, 광고·분석 전송 또는 백엔드 네트워크 통신 기능이 없습니다.</p>
+
+    <h2>4. 보관과 삭제</h2>
+    <p>저장된 반복 소비 기록과 계산 설정은 사용자가 삭제할 때까지 기기의 앱 전용 저장공간에 보관됩니다. 사용자는 앱에서 개별 기록을 삭제할 수 있습니다. 전체 앱 데이터는 Android 설정에서 앱 데이터를 삭제하거나 앱을 제거하여 삭제할 수 있습니다.</p>
+
+    <h2>5. Android 시스템 백업</h2>
+    <p>앱은 Android 시스템 백업을 별도로 끄는 <code>allowBackup</code>, <code>dataExtractionRules</code> 또는 <code>fullBackupContent</code> 설정을 선언하지 않습니다. Android 시스템 백업이 활성화된 경우 운영체제가 앱 데이터를 사용자가 선택한 백업 제공자에 백업하거나 복원할 수 있으며, Alan Works는 해당 백업 데이터에 접근하지 않습니다. 사용자는 기기 설정의 백업 메뉴에서 이 기능을 관리할 수 있습니다.</p>
+
+    <h2>6. 방침 변경</h2>
+    <p>데이터 처리 방식, 권한 또는 사용 서비스가 변경되면 이 방침을 갱신하고 시행일을 변경합니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>개인정보 또는 데이터 처리 관련 문의: Alan Works, <a href="mailto:alanworks.contact@gmail.com">alanworks.contact@gmail.com</a></p>
+    <hr>
+  </section>
+
+  <section lang="en" id="english">
+    <p><a href="#korean" lang="ko">한국어로 읽기</a></p>
+    <h1>Had I Saved Privacy Policy</h1>
+    <p class="effective">Effective: 20 September 2026</p>
+    <p>Had I Saved (Korean name: 모았으면; package name: <code>com.hotsixredbull.hadisaved</code>) is an offline app from Alan Works that calculates savings goals from recurring spending. This policy explains the data the app processes and how it handles it.</p>
+
+    <h2>1. Accounts, ads, payments, and online services</h2>
+    <ul>
+      <li>The app has no account creation, sign-up, or login feature.</li>
+      <li>It uses no advertising, payments, subscriptions, analytics, or tracking SDKs.</li>
+      <li>It does not use Firebase, and Alan Works operates no user server or backend for the app.</li>
+      <li>The app does not declare the <code>INTERNET</code> permission and does not transmit app data to Alan Works servers.</li>
+    </ul>
+
+    <h2>2. Data stored on your device</h2>
+    <p>Only when you explicitly save a recurring spending record, the app stores it in an app-specific local Room database. A record contains its ID, title, amount in minor currency units, recurrence cadence, and creation timestamp.</p>
+    <p>To retain calculator state, the app stores the annual rate, last calculator mode, and last selected cadence in on-device DataStore preferences. These values restore your calculation state the next time you open the app.</p>
+
+    <h2>3. Sharing and transmission</h2>
+    <p>The app does not send this local data to Alan Works servers or another developer-operated service. It currently has no developer-operated server, cloud sync, advertising or analytics transmission, or backend network communication.</p>
+
+    <h2>4. Retention and deletion</h2>
+    <p>Saved recurring spending records and calculator preferences remain in app-specific device storage until you delete them. You can delete individual records in the app. You can delete all app data through Android settings or by uninstalling the app.</p>
+
+    <h2>5. Android system backup</h2>
+    <p>The app does not declare settings that disable Android system backup, including <code>allowBackup</code>, <code>dataExtractionRules</code>, or <code>fullBackupContent</code>. If Android system backup is enabled, the operating system may back up or restore app data through a backup provider you choose. Alan Works cannot access that backup data. You can manage backup in your device settings.</p>
+
+    <h2>6. Changes to this policy</h2>
+    <p>If data handling, permissions, or services change, we will update this policy and its effective date.</p>
+
+    <h2>7. Contact</h2>
+    <p>For privacy or data-handling questions, contact Alan Works at <a href="mailto:alanworks.contact@gmail.com">alanworks.contact@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
